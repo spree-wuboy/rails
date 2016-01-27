@@ -1,9 +1,7 @@
-version = File.read(File.expand_path('../../RAILS_VERSION', __FILE__)).strip
-
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'actioncable'
-  s.version     = version
+  s.version     = '4.2.5'
   s.summary     = 'WebSocket framework for Rails.'
   s.description = 'Structure many real-time application concerns into channels over a single WebSocket connection.'
 
@@ -18,7 +16,7 @@ Gem::Specification.new do |s|
   s.files        = Dir['CHANGELOG.md', 'MIT-LICENSE', 'README.md', 'lib/**/*']
   s.require_path = 'lib'
 
-  s.add_dependency 'actionpack', version
+  s.add_dependency 'actionpack', '~> 4.2.5'
 
   s.add_dependency 'coffee-rails',     '~> 4.1.0'
   s.add_dependency 'eventmachine',     '~> 1.0'
